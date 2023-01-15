@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "apache-airflow-providers-mnb"
+version = "0.1.0"
+description = "Provider for Apache Airflow. Implements apache-airflow-providers-mnb package"
+authors = ["Balázs Keresztury <balazs@keresztury.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/belidzs/airflow-provider-mnb"
+packages = [
+    { include = "airflow" }
+]
+classifiers=[
+    "Framework :: Apache Airflow",
+    "Framework :: Apache Airflow :: Provider",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+apache-airflow = "^2.0"
+zeep = "^4.2"
+mnb = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+
+[tool.poetry.plugins."apache_airflow_provider"]
+provider_info = "airflow.providers.mnb.__init__:get_provider_info"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
