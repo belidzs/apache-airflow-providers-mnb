@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "apache-airflow-providers-mnb"
-version = "1.0.0"
+version = "1.0.1"
 description = "Provider for Apache Airflow. Implements apache-airflow-providers-mnb package"
 authors = ["Balázs Keresztury <balazs@keresztury.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/belidzs/airflow-provider-mnb"
+repository = "https://github.com/belidzs/apache-airflow-providers-mnb"
 packages = [
     { include = "airflow" }
 ]
