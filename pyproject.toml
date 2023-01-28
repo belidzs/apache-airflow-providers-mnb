@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "apache-airflow-providers-mnb"
-version = "1.0.1"
+version = "1.0.2"
 description = "Provider for Apache Airflow. Implements apache-airflow-providers-mnb package"
 authors = ["Balázs Keresztury <balazs@keresztury.com>"]
 license = "MIT"
