@@ -48,12 +48,12 @@ def mnb():
         task_id="is_exchange_rate_available",
         timeout=10800,
         poke_interval=600,
-        date=date.today()
+        date="{{ ds }}"
     )
     
     exchange_rates = MnbExchangeRateOperator(
         task_id="get_exchange_rates",
-        date=date.today()
+        date="{{ ds }}"
     )
     
     @task
